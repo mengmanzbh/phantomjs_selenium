@@ -7,7 +7,6 @@ driver = webdriver.PhantomJS('/usr/local/bin/phantomjs',
 # obtain wait object
 wait = ui.WebDriverWait(driver, 10)
 
-
 # navigate
 driver.get('https://app.burstorm.com/projects')
 
@@ -34,7 +33,7 @@ el_password.send_keys('Password')
 #press the button
 el_password.submit()
 
-# wait for title
+# wait for title, if any
 #wait.until(lambda driver: driver.title.lower().startswith('welcome!'))
 
 driver.save_screenshot('screenshot2.png')

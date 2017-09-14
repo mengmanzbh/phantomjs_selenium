@@ -8,7 +8,7 @@ driver = webdriver.PhantomJS("/usr/local//bin/phantomjs",
 wait = ui.WebDriverWait(driver, 30)
 
 # navigate
-driver.get("https://qa-interview-test.herokuapp.com/app/mapping")
+driver.get("https://gskrxcn.my.salesforce.com")
 # take screenshot
 driver.save_screenshot("screenshot0.png")
 # wait for element
@@ -19,8 +19,8 @@ driver.save_screenshot("screenshot1.png")
 
 
 # get elements
-el_email = driver.find_element_by_name("email")
-el_password = driver.find_element_by_name("password")
+el_email = driver.find_element_by_id("user_login")
+el_password = driver.find_element_by_id("user_pass")
 #enter wrong email
 el_email.send_keys("qa-test2@example.com")
 el_password.send_keys("5MyHUfNnPBr9xQ")
